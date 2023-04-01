@@ -115,7 +115,7 @@ include('layout/admin/datos_usuario_sesion.php');
                                     $ano =date('Y');
 
                                     ?>
-                                  <input type="date" class="form-control" value="<?php echo $ano."-".$mes."-".$dia;?>">
+                                  <input type="date" class="form-control" id="fecha_ingreso<?php echo $id_map;?>" value="<?php echo $ano."-".$mes."-".$dia;?>">
                                  </div>
                                </div>
                                <div class="form-group row">
@@ -129,14 +129,22 @@ include('layout/admin/datos_usuario_sesion.php');
                                    
 
                                     ?>
-                                  <input type="time" class="form-control" value="<?php echo $hora.":".$minutos; ?>">
+                                  <input type="time" class="form-control" id="hora_ingreso<?php echo $id_map;?>"  value="<?php echo $hora.":".$minutos; ?>">
+                                 </div>
+                               </div>
+
+                               <div class="form-group row">
+                                      <label for="staticEmail" class="col-sm-4 col-form-label">Cuviculo:</label>
+                                   <div class="col-sm-8">
+                                  
+                                  <input type="text" class="form-control" id="cuviculo<?php echo $id_map;?>" value="<?php echo $nro_espacio ?>">
                                  </div>
                                </div>
                               
                               </div>
                               <div class="modal-footer">
                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                           <button type="button" class="btn btn-primary">
+                           <button type="button" class="btn btn-primary" id="btn_registrar_ticket<?php echo $id_map;?>">
                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
                                <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
                            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
@@ -144,6 +152,22 @@ include('layout/admin/datos_usuario_sesion.php');
                             Imprimir Tiket
 
                            </button>
+                           
+                           <script>
+                             $('#btn_registrar_ticket<?php echo $id_map;?>').click(function () {
+                              var placa = $('#placa_buscar<?php echo $id_map;?>').val();
+                              var nombre_cliente = $('#nombre_cliente<?php echo $id_map;?>').val();
+                              var nit_ci = $('#nit_ci<?php echo $id_map;?>').val();
+                              var fecha_ingreso = $('#fecha_ingreso<?php echo $id_map;?>').val();
+                              var hora_ingreso = $('#hora_ingreso<?php echo $id_map;?>').val();
+                              var cuviculo = $('#cuviculo<?php echo $id_map;?>').val();
+
+
+
+
+                             });
+
+                           </script>
                            </div>
                            </div>
                         </div>
