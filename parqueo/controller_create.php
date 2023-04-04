@@ -27,7 +27,7 @@ $sentencia->bindParam('estado',$estado_del_registro);
 if($sentencia->execute() ){
     echo 'registro satisfactorio';
     ?>
-        <script>location.href = "mapeo-de-vehiculos.php";</script>
+        <script>location.href = "create.php";</script>
 
     <?php
 }else{

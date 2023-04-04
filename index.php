@@ -134,7 +134,7 @@
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="">Usuario/Email</label>
+                        <label for="">Email</label>
                         <input type="email" id="usuario"  class="form-control">
 
                     </div>

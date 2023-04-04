@@ -62,7 +62,7 @@ include('../layout/admin/datos_usuario_sesion.php');
                             <div class="row">
                                 <div class="col-md-4">
                                     <label for="">Teléfono <span style="color: red"><b>*</b></span></label>
-                                    <input type="text" class="form-control" id="telefono">
+                                    <input type="number" class="form-control" id="telefono">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="">Departamento o ciudad <span style="color: red"><b>*</b></span></label>

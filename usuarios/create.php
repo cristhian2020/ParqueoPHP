@@ -45,7 +45,7 @@ include('../layout/admin/datos_usuario_sesion.php');
 
                             <div class="form-group">
                                 <label for="">Password</label>
-                                <input type="text" class="form-control" id="password_user">
+                                <input type="password" class="form-control" id="password_user">
                             </div>
 
                             <div class="form-group">

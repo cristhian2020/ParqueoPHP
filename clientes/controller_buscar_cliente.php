@@ -5,6 +5,8 @@ $id_cliente = '';
 $nombre_cliente ='';
 $nit_ci_cliente = '';
 $placa = $_GET['placa'];
+$id_map = $_GET['id_map'];
+
 $placa = strtoupper($placa);//convierte todo a mayuscula
 
 
@@ -22,34 +24,34 @@ $placa = strtoupper($placa);//convierte todo a mayuscula
                             //echo "el Cliente es nuevo";
                             ?>
                             <div class="form-group row">
-                                      <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
-                                   <div class="col-sm-10">
+                                      <label for="staticEmail" class="col-sm-3 col-form-label">Nombre: <span><b style="color: red;">*</b></span></label>
+                                   <div class="col-sm-9">
                                   <input type="text" class="form-control" id="nombre_cliente<?php echo $id_map;?>">
                                  </div>
                                </div>
 
                                <div class="form-group row">
-                                      <label for="staticEmail" class="col-sm-2 col-form-label">NIT/CI:</label>
-                                   <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nit_ci<?php echo $id_map;?>">
+                                      <label for="staticEmail" class="col-sm-3 col-form-label">NIT/CI: <span><b style="color: red;">*</b></span></label>
+                                   <div class="col-sm-9">
+                                  <input type="number" class="form-control" id="nit_ci<?php echo $id_map;?>">
                                  </div>
                                </div>
                             <?php
 
                         }else{
                             //echo $nombre_cliente." - ".$nit_ci_cliente;
-                            ?>
+                            ?> 
                             <div class="form-group row">
-                                      <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
-                                   <div class="col-sm-10">
+                                      <label for="staticEmail" class="col-sm-3 col-form-label">Nombre:<span><b style="color: red;">*</b></span></label>
+                                   <div class="col-sm-9">
                                   <input type="text" class="form-control" id="nombre_cliente<?php echo $id_map;?>" value="<?php echo $nombre_cliente;?>">
                                  </div>
                                </div>
 
                                <div class="form-group row">
-                                      <label for="staticEmail" class="col-sm-2 col-form-label">NIT/CI:</label>
-                                   <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nit_ci<?php echo $id_map;?>" value="<?php echo $nit_ci_cliente;?>">
+                                      <label for="staticEmail" class="col-sm-3 col-form-label">NIT/CI:<span><b style="color: red;">*</b></span></label>
+                                   <div class="col-sm-9">
+                                  <input type="number" class="form-control" id="nit_ci<?php echo $id_map;?>" value="<?php echo $nit_ci_cliente;?>">
                                  </div>
                                </div>
                             <?php
