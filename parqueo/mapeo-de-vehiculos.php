@@ -27,11 +27,7 @@ include('../layout/admin/datos_usuario_sesion.php');
                         </thead>
                         <tbody>
                         <?php
-
-                       
-
                         $contador = 0;
-                       
                         $query_mapeos = $pdo->prepare("SELECT * FROM tb_mapeos WHERE estado = '1' ");
                         $query_mapeos->execute();
                         $mapeos = $query_mapeos->fetchAll(PDO::FETCH_ASSOC);

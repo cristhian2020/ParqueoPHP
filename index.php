@@ -18,8 +18,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="<?php echo $URL;?>/public/imagenes/auto1.png" width="20" height="30" alt="" loading="lazy">
-            SISPARQUEO
+            <h1 href="index.php" width="20" height="30"> 
+            <img src="<?php echo $URL;?>/public/imagenes/auto2.png" width="80" height="50" alt="" loading="lazy">
+            SAAP 
+        </h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,31 +30,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        PROMOCIONES
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">MENSUALES</a>
-                        <a class="dropdown-item" href="#">DÍAS</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">FICHAS</a>
-                    </div>
-                </li>
+                    <a class="nav-link" href="anuncios.php">ANUNCIOS</a>
+                </li>   
+               
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTANOS</a>
+                    <a class="nav-link" href="/buzon/create.php">CONTACTANOS</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+           
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
                 Ingresar
             </button>
         </div>
